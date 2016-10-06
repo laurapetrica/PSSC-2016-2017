@@ -39,7 +39,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Adresa.cs" />
+    <Compile Include="Curs.cs" />
+    <Compile Include="Departament.cs" />
+    <Compile Include="Disciplina.cs" />
+    <Compile Include="Facultate.cs" />
+    <Compile Include="Laborator.cs" />
+    <Compile Include="Orar.cs" />
+    <Compile Include="Persoana.cs" />
+    <Compile Include="Profesor.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Sala.cs" />
+    <Compile Include="Seminar.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="Universitate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

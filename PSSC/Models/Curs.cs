@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    public class Class1
+    class Curs
     {
-        //remove or alter this class, then implement your models.  
+        private Disciplina disciplina;
+
+        private Profesor profesor;
     }
 }
