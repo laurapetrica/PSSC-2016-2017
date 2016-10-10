@@ -24,12 +24,12 @@ namespace Models
 
         private Orar orar;
 
-        private Dictionary<Disciplina, byte> carnetNote;
+        private Dictionary<Disciplina, Nota> carnetNote;
 
         public Student()
         {
             discipline = new List<Disciplina>();
-            carnetNote = new Dictionary<Disciplina, byte>();
+            carnetNote = new Dictionary<Disciplina, Nota>();
         }
 
         public Student(string cnp, string nume, string prenume, int numarMatricol, byte grupa, byte subgrupa, byte anStudiu) : base(cnp, nume, prenume)
@@ -39,7 +39,7 @@ namespace Models
             this.subgrupa = subgrupa;
             this.anStudiu = anStudiu;
             discipline = new List<Disciplina>();
-            carnetNote = new Dictionary<Disciplina, byte>();
+            carnetNote = new Dictionary<Disciplina, Nota>();
         }
 
         #region Getters and Setters
@@ -134,7 +134,7 @@ namespace Models
             }
         }
 
-        internal Dictionary<Disciplina, byte> CarnetNote
+        internal Dictionary<Disciplina, Nota> CarnetNote
         {
             get
             {
