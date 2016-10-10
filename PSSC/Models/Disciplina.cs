@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Models
 {
+    enum TipEvaluare
+    {
+        Examen,
+        EvaluareDistribuita
+    };
+
     class Disciplina
     {
         private string nume;
@@ -19,6 +25,8 @@ namespace Models
         private Seminar seminar;
 
         private Laborator laborator;
+
+        private TipEvaluare tipEvaluare;
 
         public Disciplina(string nume, int nrCredite)
         {
