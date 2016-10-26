@@ -39,22 +39,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Adresa.cs" />
-    <Compile Include="Curs.cs" />
-    <Compile Include="Departament.cs" />
-    <Compile Include="Disciplina.cs" />
-    <Compile Include="Facultate.cs" />
-    <Compile Include="Laborator.cs" />
-    <Compile Include="Orar.cs" />
-    <Compile Include="Persoana.cs" />
-    <Compile Include="Profesor.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="Sala.cs" />
-    <Compile Include="Seminar.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="Universitate.cs" />
+    <Compile Include="Address.cs" />
+    <Compile Include="PersonModel\Person.cs" />
+    <Compile Include="ProfessorModel\Behavior\IEstablishStudentSituation.cs" />
+    <Compile Include="StudentModel\ActivityProportion.cs" />
+    <Compile Include="IAssign.cs" />
+    <Compile Include="StudentModel\SubjectSituation.cs" />
+    <Compile Include="StudentModel\SubjectsPerYear.cs" />
+    <Compile Include="StudentModel\Subject.cs" />
+    <Compile Include="UniversityModel\Behavior\IReportsGenerator.cs" />
+    <Compile Include="UniversityModel\Behavior\ISubjectsDistribution.cs" />
+    <Compile Include="UniversityModel\Behavior\ISubjectsAssignment.cs" />
+    <Compile Include="UniversityModel\Deanship.cs" />
+    <Compile Include="UniversityModel\Faculty.cs" />
+    <Compile Include="StudentModel\Grade.cs" />
+    <Compile Include="ProfessorModel\Professor.cs" />
+    <Compile Include="Office.cs" />
+    <Compile Include="StudentModel\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UniversityModel\University.cs" />
+    <Compile Include="UserRole.cs" />
+    <Compile Include="Utils\PersonUtils.cs" />
+    <Compile Include="Utils\StudentUtils.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
