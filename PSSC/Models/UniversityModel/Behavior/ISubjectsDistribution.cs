@@ -9,8 +9,8 @@ namespace Models.UniversityModel.Behavior
 {
     interface ISubjectsDistribution
     {
-        bool distributeSubjectsPerStudyYear(StudyYearValue studyYear, HashSet<Subject> subjects);
+        bool distributeSubjectsPerStudyYear(StudyYear studyYear, HashSet<Subject> subjects);
 
-        HashSet<Subject> getSubjects(StudyYearValue studyYear);
+        HashSet<Subject> getSubjects(StudyYear studyYear);
     }
 }

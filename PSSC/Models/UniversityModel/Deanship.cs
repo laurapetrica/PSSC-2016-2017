@@ -7,7 +7,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Models.StudentModel;
 using Models.ProfessorModel;
-using Models.StudentModel.Behavior;
 
 namespace Models.UniversityModel
 {
@@ -80,7 +79,7 @@ namespace Models.UniversityModel
         }
 
 
-        bool ISubjectsDistribution.distributeSubjectsPerStudyYear(StudyYearValue studyYear, HashSet<Subject> subjects)
+        bool ISubjectsDistribution.distributeSubjectsPerStudyYear(StudyYear studyYear, HashSet<Subject> subjects)
         {
             bool subjectsAlreadyDefined = definedSubjects.Any(subjectsPerYear => subjectsPerYear.StudyYear == studyYear);
 
@@ -96,7 +95,7 @@ namespace Models.UniversityModel
         }
 
 
-        HashSet<Subject> ISubjectsDistribution.getSubjects(StudyYearValue studyYear)
+        HashSet<Subject> ISubjectsDistribution.getSubjects(StudyYear studyYear)
         {
             bool subjectsDefined = definedSubjects.Any(subjectsPerYear => subjectsPerYear.StudyYear == studyYear);
 

@@ -1,17 +1,9 @@
-﻿using Models.StudentModel.Behavior;
-using Models.UniversityModel;
-using Models.UniversityModel.Behavior;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Models.ProfessorModel;
+﻿using System.Collections.Generic;
 
 namespace Models.StudentModel
 {
 
-    enum StudyYearValue
+    enum StudyYear
     {
         I,
         II,
@@ -21,7 +13,7 @@ namespace Models.StudentModel
 
     class SubjectsPerYear
     {
-        private StudyYearValue studyYear;
+        private StudyYear studyYear;
 
         private HashSet<Subject> allocatedSubjects;
 
@@ -30,14 +22,14 @@ namespace Models.StudentModel
             allocatedSubjects = new HashSet<Subject>();
         }
 
-        public SubjectsPerYear(StudyYearValue studyYear, HashSet<Subject> allocatedSubjects)
+        public SubjectsPerYear(StudyYear studyYear, HashSet<Subject> allocatedSubjects)
         {
             this.studyYear = studyYear;
             this.allocatedSubjects = allocatedSubjects;
         }
 
         #region Getters and Setters
-        internal StudyYearValue StudyYear
+        internal StudyYear StudyYear
         {
             get
             {

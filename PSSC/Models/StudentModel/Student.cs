@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Models.PersonModel;
 using Models.UniversityModel;
-using Models.StudentModel.Behavior;
 using Models.Utils;
 
 namespace Models.StudentModel
@@ -22,18 +21,13 @@ namespace Models.StudentModel
 
         private byte creditsNo;
 
-        private StudyYearValue studyYear;
-
         private List<SubjectSituation> situation;
 
         private HashSet<Subject> assignedSubjects;
 
-        public Student(string cnp, string firstName, string lastName, int sid, byte groupNo, byte subgroupNo, StudyYearValue studyYear) : base(cnp, firstName, lastName)
+        public Student(string cnp, string firstName, string lastName, int sid) : base(cnp, firstName, lastName)
         {
             this.sid = sid;
-            this.groupNo = groupNo;
-            this.subgroupNo = subgroupNo;
-            this.studyYear = studyYear;
             creditsNo = 0;
         }
 
@@ -124,19 +118,6 @@ namespace Models.StudentModel
             set
             {
                 subgroupNo = value;
-            }
-        }
-
-        public StudyYearValue StudyYear
-        {
-            get
-            {
-                return studyYear;
-            }
-
-            set
-            {
-                studyYear = value;
             }
         }
 

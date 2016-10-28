@@ -24,9 +24,9 @@ namespace Models.StudentModel
 
         private double activityProportion;
 
-        private StudyYearValue studyYear;
+        private StudyYear studyYear;
 
-        public Subject(string name, byte creditsNo, AssessmentType assessmentType, double activityProportion, StudyYearValue studyYear)
+        public Subject(string name, byte creditsNo, AssessmentType assessmentType, double activityProportion, StudyYear studyYear)
         {
             this.name = name;
             this.creditsNo = creditsNo;
@@ -88,7 +88,7 @@ namespace Models.StudentModel
             }
         }
 
-        internal StudyYearValue StudyYear
+        internal StudyYear StudyYear
         {
             get
             {
